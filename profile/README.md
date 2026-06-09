@@ -1,12 +1,34 @@
-## Hi there 👋
+## 🎯 Build An OPC Infra
 
-<!--
+真正缺少的往往不是工具，而是最后三项：
 
-**Here are some ideas to get you started:**
+1. 持续产出的内容矩阵
+2. 稳定获客渠道
+3. 可重复销售的产品（课程、SaaS、Agent Skill、模板、咨询服务等）
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+---
+
+最低可行配置
+
+| 类别    | 工具                  |
+| ----- | ------------------- |
+| AI编码  | Claude Code + Codex |
+| Agent | Hermes 或 OpenClaw   |
+| 知识库   | Obsidian            |
+| 存储    | NAS                 |
+| 域名    | Cloudflare          |
+| 部署    | Vercel              |
+| 自动化   | n8n                 |
+| 内容生产  | HyperFrames         |
+| 支付    | Stripe              |
+| 邮件    | Google Workspace    |
+
+月成本大约：
+
+* AI模型：50~200美元
+* 域名：10美元/年
+* NAS：一次性投入
+* 自动化：0~20美元
+* 网站：0~20美元
+
+总计大约每月 100~300 美元即可运转。
