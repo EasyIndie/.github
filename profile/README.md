@@ -95,15 +95,14 @@ graph TD
 
 <div align="center">
 
-**OPC 基础设施**
+<img src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/architecture.svg" alt="一人公司基础设施架构图：AI 员工层 / 能力与数据层 / 生产与自动化层 / 获客与变现层 / 基础环境，高亮为 EasyIndie 自研项目，底部为数据反馈闭环" width="100%" />
 
-<img src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/OPC-infra.jpg" alt="OPC 基础设施" width="80%" />
-
-**OPC 架构**
-
-<img src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/OPC-arch.jpg" alt="OPC 架构" width="80%" />
+**五层结构：AI 员工 → 能力与数据 → 生产与自动化 → 获客与变现 → 基础环境**，并以数据反馈闭环收口。
+高亮标注的为 EasyIndie 自研项目，其余为可替换的第三方工具或集成。
 
 </div>
+
+> 完整架构说明与工具选型见官网 **[opc.jokerhub.cn](https://opc.jokerhub.cn/#architecture)**。
 
 ---
 
