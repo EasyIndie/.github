@@ -2,8 +2,6 @@
 
 <img src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/EasyOPC-banner-profile.png" alt="EasyOPC — AI 时代一人公司基础设施建设" width="100%" />
 
-<h1>EasyOPC · EasyIndie</h1>
-
 **AI 时代一人公司（OPC）基础设施建设**
 
 *One-Person Company infrastructure for the AI era.*
@@ -30,17 +28,12 @@
 OPC = 一个人 + AI 员工 + 自动化系统 + 商业资产
 ```
 
-```mermaid
-graph TD
-    CEO["一人公司 CEO"]
-    CEO --> AI["AI 员工"]
-    CEO --> AUTO["自动化系统"]
-    CEO --> ASSET["商业资产"]
-
-    AI --> A1["开发 / 内容 / 研究 / 运营"]
-    AUTO --> B1["工作流 / CI / 网关 / 编排"]
-    ASSET --> C1["产品 / 内容 / 模板 / 数据"]
-```
+| 组成 | 角色 |
+|:--|:--|
+| **一个人** | 创始人 · 决策与方向 |
+| **AI 员工** | 开发 · 内容 · 研究 · 运营 Agent |
+| **自动化系统** | 工作流 · CI · 网关 · 编排 |
+| **商业资产** | 产品 · 内容 · 模板 · 数据 |
 
 **四条业务线**：内容生产（广告 / 课程 / 推广）、软件开发（SaaS 订阅）、服务咨询（自动化与 AI 员工落地）、商业资产（模板 / Skill / 课程 / 代码库）。
 
