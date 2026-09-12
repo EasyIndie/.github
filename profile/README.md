@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/EasyOPC-banner-big.png" alt="EasyOPC — AI 时代一人公司基础设施建设" width="100%" />
+<img src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/EasyOPC-banner-profile.png" alt="EasyOPC — AI 时代一人公司基础设施建设" width="100%" />
 
 <h1>EasyOPC · EasyIndie</h1>
 
