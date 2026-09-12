@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EasyOPC · AI 时代一人公司基础设施建设</title>
+<meta name="description" content="EasyOPC（EasyIndie）：AI 时代一人公司（OPC）基础设施建设。用一个创始人 + AI 员工 + 自动化系统 + 商业资产，完成过去一支团队的产能。" />
+<link rel="canonical" href="https://opc.jokerhub.cn/" />
+<link rel="icon" href="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/EasyOPC_rounded.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="EasyOPC · AI 时代一人公司基础设施建设" />
+<meta property="og:description" content="一个人 + AI 员工 + 自动化系统 + 商业资产。" />
+<meta property="og:url" content="https://opc.jokerhub.cn/" />
+<meta property="og:image" content="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/EasyOPC-banner-big.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@EasyOPC666" />
+
+<style>
+  :root{
+    --bg:#0b0f17; --bg-soft:#111827; --card:#151c2c; --card-hover:#1b2439;
+    --border:#243044; --text:#e6edf7; --muted:#93a1b8; --brand:#6366f1;
+    --brand-2:#22d3ee; --accent:#34d399; --radius:16px; --maxw:1080px;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f8fc; --bg-soft:#eef2f9; --card:#ffffff; --card-hover:#ffffff;
+      --border:#e2e8f2; --text:#0f172a; --muted:#5b6b85; --shadow:0 8px 24px rgba(15,23,42,.08); }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--text); line-height:1.7;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  .glow{
+    position:fixed; inset:0 0 auto 0; height:520px; z-index:-1; pointer-events:none;
+    background:
+      radial-gradient(600px 240px at 20% 0%, rgba(99,102,241,.22), transparent 70%),
+      radial-gradient(600px 240px at 85% 5%, rgba(34,211,238,.16), transparent 70%);
+  }
+
+  /* ---------- header ---------- */
+  header{padding:56px 0 8px; text-align:center}
+  .logo{
+    width:88px; height:88px; border-radius:24px; box-shadow:var(--shadow);
+    background:var(--card); border:1px solid var(--border); object-fit:cover;
+  }
+  h1{font-size:clamp(28px,5vw,44px); margin:20px 0 8px; letter-spacing:-.5px}
+  .tagline{font-size:clamp(15px,2.2vw,19px); color:var(--muted); margin:0}
+  .tagline strong{color:var(--text)}
+  .en{display:block; margin-top:6px; font-size:14px; color:var(--muted); font-style:italic}
+  .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin:28px 0 8px}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; padding:11px 20px; border-radius:999px;
+    font-weight:600; font-size:14px; border:1px solid var(--border); background:var(--card);
+    transition:.18s transform,.18s border-color,.18s background;
+  }
+  .btn:hover{transform:translateY(-2px); border-color:var(--brand)}
+  .btn.primary{
+    background:linear-gradient(135deg,var(--brand),#8b5cf6); border-color:transparent; color:#fff;
+  }
+  .btn.primary:hover{box-shadow:0 10px 24px rgba(99,102,241,.4)}
+
+  /* ---------- banner ---------- */
+  .banner{margin:40px auto 0; max-width:960px}
+  .banner img{width:100%; border-radius:var(--radius); border:1px solid var(--border); box-shadow:var(--shadow); display:block}
+
+  /* ---------- sections ---------- */
+  section{padding:64px 0 8px}
+  .eyebrow{color:var(--brand-2); font-weight:700; font-size:13px; letter-spacing:2px; text-transform:uppercase; margin:0 0 8px}
+  h2{font-size:clamp(22px,3.4vw,30px); margin:0 0 6px; letter-spacing:-.3px}
+  .lead{color:var(--muted); margin:0 0 28px; max-width:760px}
+
+  .formula{
+    display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:0 0 28px;
+    font-size:clamp(15px,2.4vw,19px); font-weight:700;
+  }
+  .chip{
+    padding:8px 16px; border-radius:999px; border:1px solid var(--border); background:var(--card);
+  }
+  .chip.plus{background:transparent; border:none; color:var(--muted); padding:8px 2px}
+
+  .grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+    padding:20px; transition:.18s transform,.18s border-color,.18s background; display:flex; flex-direction:column; gap:10px;
+  }
+  .card:hover{transform:translateY(-3px); border-color:var(--brand); background:var(--card-hover)}
+  .card h3{margin:0; font-size:17px; display:flex; align-items:center; gap:8px}
+  .card h3 .arrow{color:var(--brand); opacity:0; transition:.18s opacity; font-size:14px}
+  .card:hover h3 .arrow{opacity:1}
+  .card p{margin:0; color:var(--muted); font-size:14px; flex:1}
+  .tags{display:flex; flex-wrap:wrap; gap:6px}
+  .tag{
+    font-size:11px; padding:3px 9px; border-radius:999px; color:var(--muted);
+    background:var(--bg-soft); border:1px solid var(--border);
+  }
+  .group{margin-top:36px}
+  .group-h{display:flex; align-items:center; gap:10px; font-size:15px; font-weight:700; color:var(--muted); margin-bottom:16px}
+  .group-h::after{content:""; height:1px; flex:1; background:var(--border)}
+
+  .arch{display:grid; gap:20px}
+  .arch figure{margin:0}
+  .arch img{width:100%; border-radius:var(--radius); border:1px solid var(--border); box-shadow:var(--shadow); display:block}
+  .arch figcaption{text-align:center; color:var(--muted); font-size:13px; margin-top:10px}
+
+  footer{margin-top:72px; padding:36px 0 56px; border-top:1px solid var(--border); text-align:center; color:var(--muted); font-size:14px}
+  footer .links{display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin-bottom:14px}
+  footer a:hover{color:var(--text)}
+  .quote{margin-top:10px; font-size:13px}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+
+<header class="wrap">
+  <img class="logo" src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/EasyOPC_rounded.png" alt="EasyOPC Logo" />
+  <h1>EasyOPC · EasyIndie</h1>
+  <p class="tagline"><strong>AI 时代一人公司（OPC）基础设施建设</strong>
+    <span class="en">One-Person Company infrastructure for the AI era.</span>
+  </p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/orgs/EasyIndie/repositories">浏览全部项目 →</a>
+    <a class="btn" href="https://github.com/EasyIndie/.github/blob/main/docs/opc.md">什么是 OPC？</a>
+    <a class="btn" href="https://x.com/EasyOPC666">关注 @EasyOPC666</a>
+  </div>
+</header>
+
+<div class="banner wrap">
+  <img src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/EasyOPC-banner-big.png" alt="EasyOPC — AI 时代一人公司基础设施建设" />
+</div>
+
+<section class="wrap">
+  <p class="eyebrow">What is OPC</p>
+  <h2>一个人，做一支团队的事</h2>
+  <p class="lead">
+    <strong>OPC（One-Person Company，一人公司）</strong>：由一个创始人运营，通过技术、自动化工具、外包与 AI Agent
+    扩展能力，完成过去需要多人团队才能完成的商业活动。它不是「一个人硬扛所有事」，
+    而是把可复用的能力沉淀成 <strong>AI 员工、自动化系统与商业资产</strong>。
+  </p>
+  <div class="formula">
+    <span class="chip">🧑‍💼 一个人</span><span class="chip plus">+</span>
+    <span class="chip">🤖 AI 员工</span><span class="chip plus">+</span>
+    <span class="chip">⚙️ 自动化系统</span><span class="chip plus">+</span>
+    <span class="chip">📦 商业资产</span>
+  </div>
+  <p class="lead" style="margin-bottom:0">
+    <strong>四条业务线：</strong>内容生产（广告 / 课程 / 推广）· 软件开发（SaaS 订阅）·
+    服务咨询（自动化与 AI 员工落地）· 商业资产（模板 / Skill / 课程 / 代码库）。
+  </p>
+</section>
+
+<section class="wrap">
+  <p class="eyebrow">Projects</p>
+  <h2>项目矩阵</h2>
+  <p class="lead">14 个仓库，覆盖 AI 员工、内容生产、基础设施与工程实践。</p>
+
+  <div class="group">
+    <div class="group-h">🤖 AI 员工与 Agent 协作</div>
+    <div class="grid">
+      <a class="card" href="https://github.com/EasyIndie/EasyTeam">
+        <h3>EasyTeam <span class="arrow">→</span></h3>
+        <p>快速组建 AI 智能体团队：软件开发 / 内容 / 视频 / 全能公司等团队模板，覆盖多种 Agent 平台。</p>
+        <div class="tags"><span class="tag">Shell</span><span class="tag">多智能体</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/EasyGithub">
+        <h3>EasyGithub <span class="arrow">→</span></h3>
+        <p>GitHub 上的 AI 软件开发流水线：Issue → Actions → Agent Runner → Pi → PR，打上 <code>ai</code> 标签即可让 Agent 提 PR。</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">GitHub Actions</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/EasyProject">
+        <h3>EasyProject <span class="arrow">→</span></h3>
+        <p>AI Native 工程规范模板（非代码模板）：六层职责结构 + Agent 协作规范，任何 Agent 几秒读懂项目。</p>
+        <div class="tags"><span class="tag">Shell</span><span class="tag">工程规范</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/EasyIndieSkill">
+        <h3>EasyIndieSkill <span class="arrow">→</span></h3>
+        <p>内容自动化统一 AI 技能包（技能名 <code>easyindie</code>），丢给 Claude Code / Hermes / OpenClaw / Cursor 即可用。</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">AI Skill</span></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-h">🎬 内容生产</div>
+    <div class="grid">
+      <a class="card" href="https://github.com/EasyIndie/EasyContentCreator">
+        <h3>EasyContentCreator <span class="arrow">→</span></h3>
+        <p>面向 AI 与科技知识的自动化内容创作流水线：FastAPI API + Worker + React Web，正在建设工程底座。</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">React</span><span class="tag">流水线</span></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-h">🛠️ 基础设施与自托管服务</div>
+    <div class="grid">
+      <a class="card" href="https://github.com/EasyIndie/EasyAI">
+        <h3>EasyAI <span class="arrow">→</span></h3>
+        <p>可本地运行的统一 LLM 网关：OneAPI 统一 <code>/v1/*</code> 入口 + LiteLLM 上游适配 + Batch Worker + Dashboard。</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">LLM Gateway</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/EasyBot">
+        <h3>EasyBot <span class="arrow">→</span></h3>
+        <p>多平台 IM 网关：Telegram / Discord / 飞书 / QQ / 微信 统一适配，提供一致的 REST + WebSocket 接口与动态插件系统。</p>
+        <div class="tags"><span class="tag">Rust</span><span class="tag">IM Gateway</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/EasyBot-Registry">
+        <h3>EasyBot-Registry <span class="arrow">→</span></h3>
+        <p>EasyBot 官方插件市场目录：catalog.json 索引 + Releases 元数据 + ed25519 签名校验。</p>
+        <div class="tags"><span class="tag">Catalog</span><span class="tag">插件市场</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/easybot-hello-adapter">
+        <h3>easybot-hello-adapter <span class="arrow">→</span></h3>
+        <p>EasyBot 插件开发参考示例（echo 适配器）：最小可跑 + 配套插件开发指南。</p>
+        <div class="tags"><span class="tag">Rust</span><span class="tag">示例</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/EasyGate">
+        <h3>EasyGate <span class="arrow">→</span></h3>
+        <p>内网服务快速上公网的统一入口网关：Cloudflare Tunnel + Traefik 自动发现，无需公网 IP、无需开放端口。</p>
+        <div class="tags"><span class="tag">Shell</span><span class="tag">Cloudflare</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/EasyNet">
+        <h3>EasyNet <span class="arrow">→</span></h3>
+        <p>境外 VPS 代理部署方案：Xray+Reality / Hysteria2 / Shadowsocks 2022 / WireGuard，内置混淆，一键部署。</p>
+        <div class="tags"><span class="tag">Shell</span><span class="tag">VPS</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/EasyWork">
+        <h3>EasyWork <span class="arrow">→</span></h3>
+        <p>一条命令配置好开发环境：模块化安装 / 卸载、shell 补全、dry-run 预览。</p>
+        <div class="tags"><span class="tag">Shell</span><span class="tag">DevEnv</span></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-h">📚 工程实践与知识沉淀</div>
+    <div class="grid">
+      <a class="card" href="https://github.com/EasyIndie/EasyAndroid">
+        <h3>EasyAndroid <span class="arrow">→</span></h3>
+        <p>Android 真机开发实践沉淀：无 IDE 纯命令行构建、ADB 多设备、厂商侧载封锁与绕行，均来自真机验证。</p>
+        <div class="tags"><span class="tag">Shell</span><span class="tag">Android</span></div>
+      </a>
+      <a class="card" href="https://github.com/EasyIndie/.github">
+        <h3>.github <span class="arrow">→</span></h3>
+        <p>组织主页、品牌资源与 OPC 文档。</p>
+        <div class="tags"><span class="tag">Markdown</span><span class="tag">Profile</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <p class="eyebrow">Architecture</p>
+  <h2>架构全景</h2>
+  <div class="arch">
+    <figure>
+      <img loading="lazy" src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/OPC-infra.jpg" alt="OPC 基础设施架构" />
+      <figcaption>OPC 基础设施</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="https://raw.githubusercontent.com/EasyIndie/.github/main/assets/OPC-arch.jpg" alt="OPC 整体架构" />
+      <figcaption>OPC 整体架构</figcaption>
+    </figure>
+  </div>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="https://github.com/EasyIndie">GitHub</a>
+    <a href="https://github.com/orgs/EasyIndie/repositories">全部仓库</a>
+    <a href="https://github.com/EasyIndie/.github/blob/main/docs/opc.md">OPC 文档</a>
+    <a href="https://x.com/EasyOPC666">X / Twitter</a>
+  </div>
+  <div>© <span id="y">2026</span> EasyOPC · EasyIndie</div>
+  <div class="quote">用一个人 + AI，做一支团队的事。</div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
