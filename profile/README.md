@@ -101,6 +101,13 @@ OPC = 一个人 + AI 员工 + 自动化系统 + 商业资产
 
 ---
 
+## 🔗 相关组织
+
+- [**OrzGeeker**](https://github.com/OrzGeeker) — 🎵 芯片音乐（KeyGen / Chiptune）与 🛠️ Swift 工具链
+- [**OrzMC**](https://github.com/OrzMC) — 🎮 Minecraft 服务器生态：插件 / 部署 / 客户端 / 运维
+
+---
+
 <div align="center">
 
 **EasyOPC** · [官网](https://opc.jokerhub.cn) · [X / Twitter](https://x.com/EasyOPC666) · [全部仓库](https://github.com/orgs/EasyIndie/repositories)
