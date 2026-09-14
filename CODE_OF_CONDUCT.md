@@ -41,7 +41,7 @@ an individual is officially representing the community in public spaces.
 ## Enforcement
 
 Report abusive, harassing, or otherwise unacceptable behavior to
-`security@jokerhub.cn`. All complaints will be reviewed and investigated promptly and
+`824219521@qq.com`. All complaints will be reviewed and investigated promptly and
 fairly. Maintainers are obligated to respect the privacy and security of the
 reporter of any incident.
 

@@ -18,7 +18,7 @@ Use one of the following private channels:
 1. **GitHub Private Vulnerability Reporting** (preferred)
    Open the affected repository → **Security** tab → **Report a vulnerability**.
    This keeps the report private and gives us a tracked advisory.
-2. **Email**: `security@jokerhub.cn`
+2. **Email**: `824219521@qq.com`
    If you use email, please include:
    - affected repository and version/commit
    - a description of the issue and impact
